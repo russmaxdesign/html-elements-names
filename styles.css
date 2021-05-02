@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.3;
+  margin: 0;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 1em 0 1.5em;
+}
+
+td p {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: .5em;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #ccc;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  overflow: auto;
+  margin: 0;
+  padding: 1em;
+  color: #000;
+  background: #efefef;
+}
+
+code,
+kbd {
+  font-family: courier, monospace;
+  font-size: 1.1em;
+  color: green;
+}
+
+pre code {
+  line-height: 1.4;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin: .3em 0 0 0;
+  padding: 0;
+}
+
+dd {
+  margin: .3em 0 0 20px;
+  padding: 0;
+}
+
+dialog {
+  border: 1px solid #666;
+}
+
+canvas,
+iframe,
+object {
+  margin: 0;
+
+  border: 1px solid #666;
+}
+
+fieldset,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div.example {
+  margin: 0;
+  padding: 1em;
+  border: 1px solid #666;
+}
+
+.width10 {
+  width: 10%;
+}
+
+.width25 {
+  width: 25%;
+}
+
+.width40 {
+  width: 40%;
+}
+
+.intro {
+  max-width: 35em;
+}
