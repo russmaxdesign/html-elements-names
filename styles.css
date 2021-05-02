@@ -109,8 +109,12 @@ div.example {
   width: 10%;
 }
 
-.width25 {
-  width: 25%;
+.width20 {
+  width: 20%;
+}
+
+.width30 {
+  width: 30%;
 }
 
 .width40 {
