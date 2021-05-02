@@ -56,9 +56,7 @@
 <div class="example">
   <abbr title="Abbreviation">Test</abbr>
 </div>
-<pre><code>&lt;abbr title="Abbreviation"&gt;
-  Test
-&lt;/abbr&gt;</code></pre>
+<pre><code>&lt;abbr title=""&gt;Test&lt;/abbr&gt;</code></pre>
           </td>
           <td>
             <dl>
@@ -98,10 +96,10 @@
   N/A
 </div>
 <pre><code>&lt;area
-  shape="rect"
-  coords="184,6,253,27"
-  href="#"
-  alt="Test"
+  shape=""
+  coords=""
+  href=""
+  alt=""
 &gt;</code></pre>
           </td>
           <td>N/A</td>
@@ -146,7 +144,7 @@
   </aside>
 </div>
 <pre><code>&lt;aside&gt;
-  Test
+  &lt;h3&gt;Test&lt;/h3&gt;
 &lt;/aside&gt;</code></pre>
           </td>
           <td>
@@ -238,7 +236,7 @@
 <div class="example">
   <bdo dir="ltr">Test</bdo>
 </div>
-<pre><code>&lt;bdo&gt;Test&lt;/bdo&gt;</code></pre>
+<pre><code>&lt;bdo dir=""&gt;Test&lt;/bdo&gt;</code></pre>
           </td>
           <td>N/A</td>
           <td>Overrides the current text direction.</td>
@@ -322,7 +320,7 @@ Test</code></pre>
               <dt>Possible accessible names:</dt>
                 <dd><code>aria-labelledby</code></dd>
                 <dd><code>aria-label</code></dd>
-                <dd>From <code>&lt;label&gt;</code></dd>
+                <dd>From <code>&lt;label&gt;</code> with <code>for</code></dd>
                 <dd>Contents</dd>
                 <dd><code>title</code></dd>
               </dl>
@@ -339,8 +337,8 @@ Test</code></pre>
   <canvas width="100" height="50">Test</canvas>
 </div>
 <pre><code>&lt;canvas
-  width="100"
-  height="50"
+  width=""
+  height=""
 &gt;
   Test
 &lt;/canvas&gt;</code></pre>
@@ -458,7 +456,13 @@ Test</code></pre>
           <td><code>&lt;datalist&gt;</code></td>
           <td>
 <div class="example">
-  N/A
+  <label for="datalist-example">Choose a color:</label>
+  <input list="datalist-list" id="datalist-example">
+  <datalist id="datalist-list">
+    <option value="Red">
+    <option value="Green">
+    <option value="Blue">
+  </datalist>
 </div>
 <pre><code>&lt;datalist&gt;&lt;/datalist&gt;</code></pre>
           </td>
@@ -479,7 +483,7 @@ Test</code></pre>
       <dd>Description</dd>
   </dl>
 </div>
-<pre><code>&lt;dd&gt;Test&lt;/dd&gt;</code></pre>
+<pre><code>&lt;dd&gt;Description&lt;/dd&gt;</code></pre>
           </td>
           <td>
             <dl>
@@ -549,7 +553,7 @@ Test</code></pre>
           <td><code>&lt;dfn&gt;</code></td>
           <td>
 <div class="example">
-  <dfn id="one">Test</dfn>
+  <dfn id="dfn-example">Test</dfn>
 </div>
 <pre><code>&lt;dfn id=""&gt;Test&lt;/dfn&gt;</code></pre>
           </td>
@@ -675,10 +679,10 @@ Test</code></pre>
   <embed src="assets/sample.mp4" type="video/webm">
 </div>
 <pre><code>&lt;embed
-  type="video/webm"
-  src="sample.mp4"
-  width="250"
-  height="200"
+  type=""
+  src=""
+  width=""
+  height=""
 &gt;</code></pre>
           </td>
           <td>
@@ -701,11 +705,11 @@ Test</code></pre>
           <td>
 <div class="example">
   <fieldset>
-    Test
+    <legend>Test</legend>
   </fieldset>
 </div>
 <pre><code>&lt;fieldset&gt;
-  Test
+  &lt;legend&gt;Test&lt;/legend&gt;
 &lt;/fieldset&gt;</code></pre>
           </td>
           <td>
@@ -995,7 +999,10 @@ Test</code></pre>
 <div class="example">
   <img src="assets/sample.jpg" alt="Test">
 </div>
-<pre><code>&lt;img src="a.png" alt="Test"&gt;</code></pre>
+<pre><code>&lt;img
+  src=""
+  alt=""
+&gt;</code></pre>
           </td>
           <td>
             <dl>
@@ -1019,7 +1026,7 @@ Test</code></pre>
 <div class="example">
   <input type="text">
 </div>
-<pre><code>&lt;input type="text"&gt;</code></pre>
+<pre><code>&lt;input type=""&gt;</code></pre>
           </td>
           <td>
             <dl>
@@ -1028,7 +1035,7 @@ Test</code></pre>
               <dt>Possible accessible names:</dt>
                 <dd><code>aria-labelledby</code></dd>
                 <dd><code>aria-label</code></dd>
-                <dd>From <code>&lt;label&gt;</code></dd>
+                <dd>From <code>&lt;label&gt;</code> with <code>for</code></dd>
                 <dd><code>placeholder</code></dd>
                 <dd><code>aria-placeholder</code></dd>
                 <dd><code>title</code></dd>
@@ -1276,13 +1283,13 @@ Test</code></pre>
   </meter>
 </div>
 <pre><code>&lt;meter
-  id="fuel"
-  min="0"
-  max="100"
-  low="33"
-  high="66"
-  optimum="80"
-  value="50"
+  id=""
+  min=""
+  max=""
+  low=""
+  high=""
+  optimum=""
+  value=""
 &gt;
   50/100
 &lt;/meter&gt;</code></pre>
@@ -1294,7 +1301,7 @@ Test</code></pre>
               <dt>Possible accessible names:</dt>
                 <dd><code>aria-labelledby</code></dd>
                 <dd><code>aria-label</code></dd>
-                <dd>From <code>&lt;label&gt;</code></dd>
+                <dd>From <code>&lt;label&gt;</code> with <code>for</code></dd>
                 <dd><code>title</code></dd>
             </dl>
           </td>
@@ -1349,10 +1356,10 @@ Test</code></pre>
           <td>
 <object data="assets/sample.pdf" width="100" height="100" type="application/pdf"></object>
 <pre><code>&lt;object
-  data="sample.pdf"
-  width="100"
-  height="100"
-  type="application/pdf"
+  data=""
+  width=""
+  height=""
+  type=""
 &gt;
 &lt;/object&gt;</code></pre>
           </td>
@@ -1444,8 +1451,8 @@ Test</code></pre>
   <output name="result" for="a b">60</output>
 </div>
 <pre><code>&lt;output
-  name="result"
-  for="a"
+  name=""
+  for=""
 &gt;
   60
 &lt;/output&gt;</code></pre>
@@ -1457,7 +1464,7 @@ Test</code></pre>
               <dt>Possible accessible names:</dt>
                 <dd><code>aria-labelledby</code></dd>
                 <dd><code>aria-label</code></dd>
-                <dd>From <code>&lt;label&gt;</code></dd>
+                <dd>From <code>&lt;label&gt;</code> with <code>for</code></dd>
                 <dd><code>title</code></dd>
             </dl>
           </td>
@@ -1513,8 +1520,7 @@ Test</code></pre>
   </picture>
 </div>
 <pre><code>&lt;picture&gt;
-  &lt;source srcset="sample.jpg"&gt;
-  &lt;img src="sample.jpg" alt=""&gt;
+  &lt;source srcset=""&gt;
 &lt;/picture&gt;</code></pre>
           </td>
           <td>N/A</td>
@@ -1553,9 +1559,9 @@ Test</code></pre>
   <progress id="file" max="100" value="70"> 70% </progress>
 </div>
 <pre><code>&lt;progress
-  id="file"
-  max="100"
-  value="70"
+  id=""
+  max=""
+  value=""
 &gt;
   70%
 &lt;/progress&gt;</code></pre>
@@ -1567,7 +1573,7 @@ Test</code></pre>
               <dt>Possible accessible names:</dt>
                 <dd><code>aria-labelledby</code></dd>
                 <dd><code>aria-label</code></dd>
-                <dd>From <code>&lt;label&gt;</code></dd>
+                <dd>From <code>&lt;label&gt;</code> with <code>for</code></dd>
                 <dd><code>title</code></dd>
             </dl>
           </td>
@@ -1720,7 +1726,7 @@ Test</code></pre>
               <dt>Possible accessible names:</dt>
                 <dd><code>aria-labelledby</code></dd>
                 <dd><code>aria-label</code></dd>
-                <dd>From <code>&lt;label&gt;</code></dd>
+                <dd>From <code>&lt;label&gt;</code> with <code>for</code></dd>
                 <dd><code>title</code></dd>
             </dl>
           </td>
@@ -1870,7 +1876,7 @@ Test</code></pre>
               <dt>Possible accessible names:</dt>
                 <dd><code>aria-labelledby</code></dd>
                 <dd><code>aria-label</code></dd>
-                <dd>From <code>&lt;title&gt;</code></dd>
+                <dd>From SVG <code>&lt;title&gt;</code> element</dd>
                 <dd><code>title</code></dd>
             </dl>
           </td>
@@ -1989,7 +1995,7 @@ Test</code></pre>
               <dt>Possible accessible names:</dt>
                 <dd><code>aria-labelledby</code></dd>
                 <dd><code>aria-label</code></dd>
-                <dd>From <code>&lt;label&gt;</code></dd>
+                <dd>From <code>&lt;label&gt;</code> with <code>for</code></dd>
                 <dd><code>placeholder</code></dd>
                 <dd><code>aria-placeholder</code></dd>
                 <dd><code>title</code></dd>
@@ -2147,9 +2153,9 @@ Test</code></pre>
 </div>
 <pre><code>&lt;track
   default
-  kind="captions"
-  srclang="en"
-  src="sample.vtt"
+  kind=""
+  srclang=""
+  src=""
 &gt;</code></pre>
           </td>
           <td>N/A</td>
