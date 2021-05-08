@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.3;
+  margin: 0;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 1em 0 1.5em;
+}
+
+td p {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: .5em;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #ccc;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  overflow: auto;
+  margin: 0;
+  padding: 1em;
+  color: #000;
+  background: #efefef;
+}
+
+code,
+kbd {
+  font-family: courier, monospace;
+  font-size: 1.1em;
+  color: green;
+}
+
+pre code {
+  line-height: 1.4;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin: .3em 0 0 0;
+  padding: 0;
+}
+
+dd {
+  margin: .3em 0 0 20px;
+  padding: 0;
+}
+
+dialog {
+  border: 1px solid #666;
+}
+
+canvas,
+iframe,
+object {
+  margin: 0;
+
+  border: 1px solid #666;
+}
+
+fieldset,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div.example {
+  margin: 0;
+  padding: 1em;
+  border: 1px solid #666;
+}
+
+.width10 {
+  width: 10%;
+}
+
+.width20 {
+  width: 20%;
+}
+
+.width30 {
+  width: 30%;
+}
+
+.width40 {
+  width: 40%;
+}
+
+.intro {
+  max-width: 35em;
+}
+
+.sortable-form label {
+  display: inline-block;
+  color: #000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin: 0 5px 1em 0;
+  line-height: 1;
+}
+
+.sortable-form input {
+  border: 1px solid #666;
+  color: #000;
+  background: #fff;
+  height: 32px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: 0 .5em;
+  margin: 0 5px 1em 0;
+  line-height: 1;
+  border-radius: .3em;
+}
+
+
+.sortable-form input:focus {
+  border: 1px solid #000;
+  outline: 0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px blue;
+}
+
+.sortable-form button {
+  border: 1px solid #666;
+  color: #000;
+  background: #fff;
+  height: 32px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: 0 .7em;
+  margin: 0 0 1em;
+  line-height: 1;
+  border-radius: .3em;
+}
+
+.sortable-form button:focus {
+  border: 1px solid #666;
+  outline: 0;
+  color: #fff;
+  background: #000;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px blue;
+}
+
+.sortable-form button:hover {
+  color: #fff;
+  background: green;
+}
+
+.sortable-form button:active {
+  background: red;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px red;
+}
