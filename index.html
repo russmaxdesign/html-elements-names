@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>HTML elements and accessible names</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="styles.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
   </head>
   <body>
     <h1>HTML elements and accessible names</h1>
@@ -12,6 +12,12 @@
     <p class="intro">
       The chart below shows a list of HTML elements and the roles and possible accessible names available via Chrome's accessibility tree.
     </p>
+    <div id="users">
+      <div class="sortable-form">
+        <label for="one">Filter element by name</label>
+        <input class="search" id="one">
+        <button class="sort" data-sort="name">Filter</button>
+      </div>
     <table>
       <thead>
         <tr>
@@ -21,12 +27,12 @@
           <th class="width20">Description</th>
         </tr>
       </thead>
-      <tbody>
+        <tbody class="list">
 
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;a&gt;</code></td>
+          <td class="name"><code>a</code></td>
           <td>
 <div class="example">
   <a href="#">Test</a>
@@ -51,7 +57,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;abbr&gt;</code></td>
+          <td class="name"><code>abbr</code></td>
           <td>
 <div class="example">
   <abbr title="Abbreviation">Test</abbr>
@@ -74,7 +80,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;address&gt;</code></td>
+          <td class="name"><code>address</code></td>
           <td>
 <div class="example">
   <address>Test</address>
@@ -90,7 +96,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;area&gt;</code></td>
+          <td class="name"><code>area</code></td>
           <td>
 <div class="example">
   N/A
@@ -109,7 +115,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;article&gt;</code></td>
+          <td class="name"><code>article</code></td>
           <td>
 <div class="example">
   <article>
@@ -136,7 +142,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;aside&gt;</code></td>
+          <td class="name"><code>aside</code></td>
           <td>
 <div class="example">
   <aside>
@@ -163,7 +169,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;audio&gt;</code></td>
+          <td class="name"><code>audio</code></td>
           <td>
 <div class="example">
   <audio controls src="assets/sample.mp3"></audio>
@@ -189,7 +195,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;b&gt;</code></td>
+          <td class="name"><code>b</code></td>
           <td>
 <div class="example">
   <b>Test</b>
@@ -203,7 +209,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;base&gt;</code></td>
+          <td class="name"><code>base</code></td>
           <td>
 <div class="example">
   N/A
@@ -217,7 +223,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;bdi&gt;</code></td>
+          <td class="name"><code>bdi</code></td>
           <td>
 <div class="example">
   <bdi>Test</bdi>
@@ -231,7 +237,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;bdo&gt;</code></td>
+          <td class="name"><code>bdo</code></td>
           <td>
 <div class="example">
   <bdo dir="ltr">Test</bdo>
@@ -245,7 +251,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;blockquote&gt;</code></td>
+          <td class="name"><code>blockquote</code></td>
           <td>
 <div class="example">
   <blockquote>
@@ -272,7 +278,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;body&gt;</code></td>
+          <td class="name"><code>body</code></td>
           <td>
 <div class="example">
   N/A
@@ -286,7 +292,7 @@
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;br&gt;</code></td>
+          <td class="name"><code>br</code></td>
           <td>
 <div class="example">
   Test<br>Test
@@ -306,7 +312,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;button&gt;</code></td>
+          <td class="name"><code>button</code></td>
           <td>
 <div class="example">
   <button>Test</button>
@@ -331,7 +337,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;canvas&gt;</code></td>
+          <td class="name"><code>canvas</code></td>
           <td>
 <div class="example">
   <canvas width="100" height="50">Test</canvas>
@@ -359,7 +365,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;caption&gt;</code>
+          <td class="name"><code>caption</code>
           </td>
           <td>
 <div class="example">
@@ -383,7 +389,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;cide&gt;</code></td>
+          <td class="name"><code>cide</code></td>
           <td>
 <div class="example">
   <cite>Test</cite>
@@ -397,7 +403,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;code&gt;</code></td>
+          <td class="name"><code>code</code></td>
           <td>
 <div class="example">
   <code>Test</code>
@@ -411,7 +417,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;col&gt;</code></td>
+          <td class="name"><code>col</code></td>
           <td>
 <div class="example">
   N/A
@@ -425,7 +431,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;colgroup&gt;</code></td>
+          <td class="name"><code>colgroup</code></td>
           <td>
 <div class="example">
   N/A
@@ -439,7 +445,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;data&gt;</code></td>
+          <td class="name"><code>data</code></td>
           <td>
 <div class="example">
   <data value="398">Test</data>
@@ -453,7 +459,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;datalist&gt;</code></td>
+          <td class="name"><code>datalist</code></td>
           <td>
 <div class="example">
   <label for="datalist-example">Choose a color:</label>
@@ -473,7 +479,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;dd&gt;</code></td>
+          <td class="name"><code>dd</code></td>
           <td>
 <div class="example">
   <dl>
@@ -501,7 +507,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;del&gt;</code></td>
+          <td class="name"><code>del</code></td>
           <td>
 <div class="example">
   <del>Test</del>
@@ -524,7 +530,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;details&gt;</code></td>
+          <td class="name"><code>details</code></td>
           <td>
 <div class="example">
   <details>
@@ -550,7 +556,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;dfn&gt;</code></td>
+          <td class="name"><code>dfn</code></td>
           <td>
 <div class="example">
   <dfn id="dfn-example">Test</dfn>
@@ -564,7 +570,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;dialog&gt;</code></td>
+          <td class="name"><code>dialog</code></td>
           <td>
 <div class="example">
   <dialog open>Test</dialog>
@@ -589,7 +595,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;div&gt;</code></td>
+          <td class="name"><code>div</code></td>
           <td>
 <div class="example">Test</div>
 <pre><code>&lt;div&gt;
@@ -603,7 +609,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;dl&gt;</code></td>
+          <td class="name"><code>dl</code></td>
           <td>
 <div class="example">
   <dl>
@@ -631,7 +637,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;dt&gt;</code></td>
+          <td class="name"><code>dt</code></td>
           <td>
 <div class="example">
   <dl>
@@ -659,7 +665,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;em&gt;</code></td>
+          <td class="name"><code>em</code></td>
           <td>
 <div class="example">
   <em>Test</em>
@@ -673,7 +679,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;embed&gt;</code></td>
+          <td class="name"><code>embed</code></td>
           <td>
 <div class="example">
   <embed src="assets/sample.mp4" type="video/webm">
@@ -701,7 +707,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;fieldset&gt;</code></td>
+          <td class="name"><code>fieldset</code></td>
           <td>
 <div class="example">
   <fieldset>
@@ -729,7 +735,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;figcaption&gt;</code></td>
+          <td class="name"><code>figcaption</code></td>
           <td>
 <div class="example">
   <figure>
@@ -754,7 +760,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;figure&gt;</code></td>
+          <td class="name"><code>figure</code></td>
           <td>
 <div class="example">
   <figure>
@@ -781,7 +787,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;footer&gt;</code></td>
+          <td class="name"><code>footer</code></td>
           <td>
 <div class="example">
   <footer>
@@ -809,7 +815,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;form&gt;</code></td>
+          <td class="name"><code>form</code></td>
           <td>
 <div class="example">
   <form action="#">Test</form>
@@ -832,7 +838,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;h3&gt;</code></td>
+          <td class="name"><code>h3</code></td>
           <td>
 <div class="example">
   <h3>Test</h3>
@@ -856,7 +862,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;head&gt;</code></td>
+          <td class="name"><code>head</code></td>
           <td>
 <div class="example">
   N/A
@@ -870,7 +876,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;header&gt;</code></td>
+          <td class="name"><code>header</code></td>
           <td>
 <div class="example">
   <header>
@@ -898,7 +904,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;hgroup&gt;</code></td>
+          <td class="name"><code>hgroup</code></td>
           <td>
 <div class="example">
   <hgroup>
@@ -916,7 +922,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;hr&gt;</code></td>
+          <td class="name"><code>hr</code></td>
           <td>
 <div class="example">
   <hr>
@@ -939,7 +945,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;html&gt;</code></td>
+          <td class="name"><code>html</code></td>
           <td>
 <div class="example">
   N/A
@@ -953,7 +959,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;i&gt;</code></td>
+          <td class="name"><code>i</code></td>
           <td>
 <div class="example">
   <i>Test</i>
@@ -967,7 +973,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;iframe&gt;</code></td>
+          <td class="name"><code>iframe</code></td>
           <td>
 <div class="example">
   <iframe
@@ -994,7 +1000,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;img&gt;</code></td>
+          <td class="name"><code>img</code></td>
           <td>
 <div class="example">
   <img src="assets/sample.jpg" alt="Test">
@@ -1021,7 +1027,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;input&gt;</code></td>
+          <td class="name"><code>input</code></td>
           <td>
 <div class="example">
   <input type="text">
@@ -1047,7 +1053,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;ins&gt;</code></td>
+          <td class="name"><code>ins</code></td>
           <td>
 <div class="example">
   <ins>Test</ins>
@@ -1070,7 +1076,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;kbd&gt;</code></td>
+          <td class="name"><code>kbd</code></td>
           <td>
 <div class="example">
   <kbd>Test</kbd>
@@ -1084,7 +1090,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;label&gt;</code></td>
+          <td class="name"><code>label</code></td>
           <td>
 <div class="example">
   <label>Test</label>
@@ -1107,7 +1113,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;legend&gt;</code></td>
+          <td class="name"><code>legend</code></td>
           <td>
 <div class="example">
   <fieldset>
@@ -1132,7 +1138,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;li&gt;</code></td>
+          <td class="name"><code>li</code></td>
           <td>
 <div class="example">
   <ul>
@@ -1157,7 +1163,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;link&gt;</code></td>
+          <td class="name"><code>link</code></td>
           <td>
 <div class="example">
   N/A
@@ -1171,7 +1177,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;main&gt;</code></td>
+          <td class="name"><code>main</code></td>
           <td>
 <div class="example">
   N/A
@@ -1196,7 +1202,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;map&gt;</code></td>
+          <td class="name"><code>map</code></td>
           <td>
 <div class="example">
   N/A
@@ -1210,7 +1216,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;mark&gt;</code></td>
+          <td class="name"><code>mark</code></td>
           <td>
 <div class="example">
   <mark>Test</mark>
@@ -1233,7 +1239,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;menu&gt;</code></td>
+          <td class="name"><code>menu</code></td>
           <td>
 <div class="example">
   N/A
@@ -1247,7 +1253,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;menuitem&gt;</code></td>
+          <td class="name"><code>menuitem</code></td>
           <td>
 <div class="example">
   N/A
@@ -1261,7 +1267,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;meta&gt;</code></td>
+          <td class="name"><code>meta</code></td>
           <td>
 <div class="example">
   N/A
@@ -1275,7 +1281,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;meter&gt;</code></td>
+          <td class="name"><code>meter</code></td>
           <td>
 <div class="example">
   <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">
@@ -1311,7 +1317,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;nav&gt;</code></td>
+          <td class="name"><code>nav</code></td>
           <td>
 <div class="example">
   <nav>
@@ -1338,7 +1344,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;noscript&gt;</code></td>
+          <td class="name"><code>noscript</code></td>
           <td>
 <div class="example">
   N/A
@@ -1352,7 +1358,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;object&gt;</code></td>
+          <td class="name"><code>object</code></td>
           <td>
 <object data="assets/sample.pdf" width="100" height="100" type="application/pdf"></object>
 <pre><code>&lt;object
@@ -1379,7 +1385,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;ol&gt;</code></td>
+          <td class="name"><code>ol</code></td>
           <td>
 <div class="example">
   <ol>
@@ -1406,7 +1412,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;optgroup&gt;</code></td>
+          <td class="name"><code>optgroup</code></td>
           <td>
 <div class="example">
   N/A
@@ -1420,7 +1426,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;option&gt;</code></td>
+          <td class="name"><code>option</code></td>
           <td>
 <div class="example">
   <select>
@@ -1445,7 +1451,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;output&gt;</code></td>
+          <td class="name"><code>output</code></td>
           <td>
 <div class="example">
   <output name="result" for="a b">60</output>
@@ -1474,7 +1480,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;p&gt;</code></td>
+          <td class="name"><code>p</code></td>
           <td>
 <div class="example">
   <p>Test</p>
@@ -1497,7 +1503,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;param&gt;</code></td>
+          <td class="name"><code>param</code></td>
           <td>
 <div class="example">
   N/A
@@ -1511,7 +1517,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;picture&gt;</code></td>
+          <td class="name"><code>picture</code></td>
           <td>
 <div class="example">
   <picture>
@@ -1530,7 +1536,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;pre&gt;</code></td>
+          <td class="name"><code>pre</code></td>
           <td>
 <div class="example">
   N/A
@@ -1553,7 +1559,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;progress&gt;</code></td>
+          <td class="name"><code>progress</code></td>
           <td>
 <div class="example">
   <progress id="file" max="100" value="70"> 70% </progress>
@@ -1583,7 +1589,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;q&gt;</code></td>
+          <td class="name"><code>q</code></td>
           <td>
 <div class="example">
   <q>Test</q>
@@ -1597,7 +1603,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;rp&gt;</code></td>
+          <td class="name"><code>rp</code></td>
           <td>
 <div class="example">
   N/A
@@ -1611,7 +1617,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;rt&gt;</code></td>
+          <td class="name"><code>rt</code></td>
           <td>
 <div class="example">
   N/A
@@ -1625,7 +1631,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;ruby&gt;</code></td>
+          <td class="name"><code>ruby</code></td>
           <td>
 <div class="example">
   N/A
@@ -1639,7 +1645,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;s&gt;</code></td>
+          <td class="name"><code>s</code></td>
           <td>
 <div class="example">
   <s>Test</s>
@@ -1653,7 +1659,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;samp&gt;</code></td>
+          <td class="name"><code>samp</code></td>
           <td>
 <div class="example">
   <samp>Test</samp>
@@ -1667,7 +1673,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;script&gt;</code></td>
+          <td class="name"><code>script</code></td>
           <td>
 <div class="example">
   N/A
@@ -1681,7 +1687,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;section&gt;</code></td>
+          <td class="name"><code>section</code></td>
           <td>
 <div class="example">
   <section>
@@ -1708,7 +1714,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;select&gt;</code></td>
+          <td class="name"><code>select</code></td>
           <td>
 <div class="example">
   <select>
@@ -1736,7 +1742,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;small&gt;</code></td>
+          <td class="name"><code>small</code></td>
           <td>
 <div class="example">
   <small>Test</small>
@@ -1750,7 +1756,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;source&gt;</code></td>
+          <td class="name"><code>source</code></td>
           <td>
 <div class="example">
   N/A
@@ -1764,7 +1770,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;span&gt;</code></td>
+          <td class="name"><code>span</code></td>
           <td>
 <div class="example">
   <span>Test</span>
@@ -1778,7 +1784,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;strong&gt;</code></td>
+          <td class="name"><code>strong</code></td>
           <td>
 <div class="example">
   <strong>Test</strong>
@@ -1792,7 +1798,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;style&gt;</code></td>
+          <td class="name"><code>style</code></td>
           <td>
 <div class="example">
   N/A
@@ -1806,7 +1812,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;sub&gt;</code></td>
+          <td class="name"><code>sub</code></td>
           <td>
 <div class="example">
   <sub>Test</sub>
@@ -1820,7 +1826,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;summary&gt;</code></td>
+          <td class="name"><code>summary</code></td>
           <td>
 <div class="example">
   <details>
@@ -1847,7 +1853,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;sup&gt;</code></td>
+          <td class="name"><code>sup</code></td>
           <td>
 <div class="example">
   <sup>Test</sup>
@@ -1860,7 +1866,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;svg&gt;</code></td>
+          <td class="name"><code>svg</code></td>
           <td>
 <div class="example">
   <svg>
@@ -1886,7 +1892,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;table&gt;</code></td>
+          <td class="name"><code>table</code></td>
           <td>
 <table>
   <thead>
@@ -1920,7 +1926,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;tbody&gt;</code></td>
+          <td class="name"><code>tbody</code></td>
           <td>
 <div class="example">
   N/A
@@ -1934,7 +1940,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;td&gt;</code></td>
+          <td class="name"><code>td</code></td>
           <td>
 <table>
   <thead>
@@ -1967,7 +1973,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;template&gt;</code></td>
+          <td class="name"><code>template</code></td>
           <td>
 <div class="example">
   N/A
@@ -1981,7 +1987,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;textarea&gt;</code></td>
+          <td class="name"><code>textarea</code></td>
           <td>
 <div class="example">
   <textarea cols="30" rows="5"></textarea>
@@ -2007,7 +2013,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;tfoot&gt;</code></td>
+          <td class="name"><code>tfoot</code></td>
           <td>
 <div class="example">
   N/A
@@ -2021,7 +2027,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;th&gt;</code></td>
+          <td class="name"><code>th</code></td>
           <td>
 <table>
   <thead>
@@ -2054,7 +2060,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;thead&gt;</code></td>
+          <td class="name"><code>thead</code></td>
           <td>
 <table>
   <thead>
@@ -2077,7 +2083,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;time&gt;</code></td>
+          <td class="name"><code>time</code></td>
           <td>
 <div class="example">
   <time datetime="20:00">20:00</time>
@@ -2100,7 +2106,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;title&gt;</code></td>
+          <td class="name"><code>title</code></td>
           <td>
 <div class="example">
   N/A
@@ -2114,7 +2120,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;tr&gt;</code></td>
+          <td class="name"><code>tr</code></td>
           <td>
 <table>
   <thead>
@@ -2146,7 +2152,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;track&gt;</code></td>
+          <td class="name"><code>track</code></td>
           <td>
 <div class="example">
   N/A
@@ -2165,7 +2171,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;u&gt;</code></td>
+          <td class="name"><code>u</code></td>
           <td>
 <div class="example">
   <u>Test</u>
@@ -2179,7 +2185,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;ul&gt;</code></td>
+          <td class="name"><code>ul</code></td>
           <td>
 <div class="example">
   <ul>
@@ -2204,7 +2210,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;var&gt;</code></td>
+          <td class="name"><code>var</code></td>
           <td>
 <div class="example">
   <var>Test</var>
@@ -2218,7 +2224,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;video&gt;</code></td>
+          <td class="name"><code>video</code></td>
           <td>
 <div class="example">
   <video controls width="250">
@@ -2243,7 +2249,7 @@ Test</code></pre>
 <!-- NEW ROW -->
 
         <tr>
-          <td><code>&lt;wbr&gt;</code></td>
+          <td class="name"><code>wbr</code></td>
           <td>
 <div class="example">
   Test<wbr>Test
@@ -2255,5 +2261,15 @@ Test</code></pre>
         </tr>
       </tbody>
     </table>
+    </div>
+<script src="assets/js/list.min.js"></script>
+<script>
+  
+  var options = {
+  valueNames: [ 'name' ]
+};
+
+var userList = new List('users', options);
+</script>
   </body>
 </html>
