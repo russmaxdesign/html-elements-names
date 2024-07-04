@@ -461,7 +461,9 @@ Test</code></pre>
           </td>
           <td>
 <div class="example">
-  N/A
+  <table>
+    <caption>Test</caption>
+  </table>
 </div>
 <pre><code>&lt;caption&gt;Test&lt;/caption&gt;</code></pre>
           </td>
@@ -518,7 +520,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>code</code></dd>
             </dl>
           </td>
           <td>Represents text as computer code.</td>
@@ -605,6 +608,8 @@ Test</code></pre>
           </td>
           <td>
             <dl>
+              <dt>Parent role:</dt>
+              <dd><code>Combobox</code></dd>
               <dt>Role:</dt>
               <dd><code>Accessibility node not exposed</code></dd>
             </dl>
@@ -623,10 +628,8 @@ Test</code></pre>
           <td>
 <div class="example">
   <dl>
-    <dt>DT:</dt>
-      <dd>Term</dd>
-    <dt>DD:</dt>
-      <dd>Description</dd>
+    <dt>Definition term:</dt>
+      <dd>Definition description</dd>
   </dl>
 </div>
 <pre><code>&lt;dd&gt;Description&lt;/dd&gt;</code></pre>
@@ -634,7 +637,7 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>DescriptionListDetail</code></dd>
+              <dd><code>definition</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -691,7 +694,7 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>details</code></dd>
+              <dd><code>group</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -718,7 +721,7 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>generic</code></dd>
+              <dd><code>term</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -795,10 +798,8 @@ Test</code></pre>
           <td>
 <div class="example">
   <dl>
-    <dt>DT:</dt>
-      <dd>Term</dd>
-    <dt>DD:</dt>
-      <dd>Description</dd>
+    <dt>Definition term:</dt>
+      <dd>Definition description</dd>
   </dl>
 </div>
 <pre><code>&lt;dl&gt;&lt;/dl&gt;</code></pre>
@@ -806,7 +807,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>DescriptionList</code></dd>
+              <dd>Chrome: <code>DescriptionList</code></dd>
+              <dd>Firefox: <code>definitionlist</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -827,10 +829,8 @@ Test</code></pre>
           <td>
 <div class="example">
   <dl>
-    <dt>DT:</dt>
-      <dd>Term</dd>
-    <dt>DD:</dt>
-      <dd>Description</dd>
+    <dt>Definition term:</dt>
+      <dd>Definition description</dd>
   </dl>
 </div>
 <pre><code>&lt;dt&gt;Term&lt;/dt&gt;</code></pre>
@@ -838,7 +838,7 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>DescriptionListTerm</code></dd>
+              <dd><code>term</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -865,7 +865,7 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd><code>emphasis</code></dd>
             </dl>
           </td>
           <td>Represents emphasized text.</td>
@@ -893,7 +893,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>EmbeddedObject</code></dd>
+              <dd>Chrome: <code>EmbeddedObject</code></dd>
+              <dd>Firefox: <code>internal frame</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -954,7 +955,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>figcaption</code></dd>
+              <dd>Chrome: <code>figcaption</code></dd>
+              <dd>Firefox: <code>caption</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -2372,7 +2374,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>svgRoot</code></dd>
+              <dd>Chrome: <code>image</code></dd>
+              <dd>Firefox: <code>graphics-document</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -2834,6 +2837,9 @@ Test</code></pre>
       </tbody>
     </table>
     </div>
+<header>Header test</header>
+<footer>Footer test</footer>
+<main>Main test</main>
 <script src="assets/js/list.min.js"></script>
 <script>
   
