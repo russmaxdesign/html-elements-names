@@ -1037,14 +1037,18 @@ Test</code></pre>
           <td class="name"><code>form</code></td>
           <td>
 <div class="example">
-  <form action="#">Test</form>
+  <form action="#">
+    <label for="form-example">Label text</label>
+    <input id="form-example" type="text">
+  </form>
 </div>
 <pre><code>&lt;form action="#"&gt;&lt;/form&gt;</code></pre>
           </td>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>form</code></dd>
+              <dd>Chrome: <code>generic</code></dd>
+              <dd>FireFox: <code>form</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1119,8 +1123,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd>Primary: <code>Banner</code></dd>
-              <dd>Non-primary: <code>HeaderAsNonLandmark</code></dd>
+              <dd>Primary: <code>banner</code></dd>
+              <dd>Non-primary: <code>generic</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1148,7 +1152,16 @@ Test</code></pre>
   &lt;h3&gt;Test&lt;/h3&gt;
 &lt;/hgroup&gt;</code></pre>
           </td>
-          <td>N/A</td>
+          <td>
+            <dl>
+              <dt>Role:</dt>
+              <dd><code>group</code></dd>
+              <dt>Possible accessible names:</dt>
+              <dd><code>aria-labelledby</code></dd>
+              <dd><code>aria-label</code></dd>
+              <dd><code>title</code></dd>
+            </dl>
+          </td>
           <td>Represents a group of headings.</td>
         </tr>
 
@@ -1241,7 +1254,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>iframe</code></dd>
+              <dd>Chrome: <code>iframe</code></dd>
+              <dd>FireFox: <code>internal frame</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1379,7 +1393,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>LabelText</code></dd>
+              <dd>Chrome: <code>LabelText</code></dd>
+              <dd>FireFox: <code>label</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1408,7 +1423,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>legend</code></dd>
+              <dd>Chrome: <code>legend</code></dd>
+              <dd>FireFox: <code>label</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1703,7 +1719,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>PluginObject</code></dd>
+              <dd>Chrome: <code>PluginObject</code></dd>
+              <dd>FireFox: <code>Document</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -2052,7 +2069,11 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd><code>deletion</code></dd>
+              <dt>Possible accessible names:</dt>
+              <dd><code>aria-labelledby</code></dd>
+              <dd><code>aria-label</code></dd>
+              <dd><code>title</code></dd>
             </dl>
           </td>
           <td>Represents contents that are no longer accurate or no longer relevant.</td>
@@ -2155,7 +2176,7 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>section</code></dd>
+              <dd><code>generic</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -2255,7 +2276,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>FireFox: <code>generic</code></dd>
             </dl>
           </td>
           <td>Represents an inline styleless section in a document.</td>
@@ -2278,7 +2300,7 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd><code>strong</code></dd>
             </dl>
           </td>
           <td>Indicate strongly emphasized text.</td>
@@ -2833,7 +2855,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>video</code></dd>
+              <dd>Chrome: <code>video</code></dd>
+              <dd>FireFox: <code>group</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -2868,9 +2891,7 @@ Test</code></pre>
       </tbody>
     </table>
     </div>
-<header>Header test</header>
-<footer>Footer test</footer>
-<main>Main test</main>
+
 <script src="assets/js/list.min.js"></script>
 <script>
   
