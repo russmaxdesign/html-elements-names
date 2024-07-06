@@ -10,7 +10,7 @@
   <h1>HTML elements: roles and possible accessible names</h1>
   <p><a href="https://github.com/russmaxdesign/html-elements-names">Github page</a></p>
   <p class="intro">
-    The chart below shows a list of HTML elements along with their roles and possible accessible names available via Chrome's accessibility tree.
+    The chart below shows a list of HTML elements along with their roles and possible accessible names available via the Chrome and Firefox accessibility trees.
   </p>
   <div id="users">
     <div class="sortable-form">
@@ -2034,7 +2034,7 @@ Test</code></pre>
 <div class="example">
   <picture>
     <source srcset="assets/sample.jpg" media="(min-width: 800px)">
-    <img src="assets/sample.jpg" alt="">
+    <img src="assets/sample.jpg" alt="Socce ball">
   </picture>
 </div>
 <pre><code>&lt;picture&gt;
@@ -2067,7 +2067,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>pre</code></dd>
+              <dd>Chrome: <code>pre</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -2128,7 +2129,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Fierefox: <code>generic</code></dd>
             </dl>
           </td>
           <td>Represents a short inline quotation.</td>
@@ -2232,7 +2234,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
             </dl>
           </td>
           <td>Specifies text as sample output from a computer program.</td>
@@ -2367,7 +2370,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Fireefox: <code>text leaf</code></dd>
             </dl>
           </td>
           <td>Displays text in a smaller size.</td>
@@ -2503,7 +2507,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>DisclosureTriangle</code></dd>
+              <dd>Chrome: <code>DisclosureTriangle</code></dd>
+              <dd>Firefox: <code>summary</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -2912,7 +2917,13 @@ Test</code></pre>
 </div>
 <pre><code>&lt;u&gt;Test&lt;/u&gt;</code></pre>
           </td>
-          <td>N/A</td>
+          <td>
+            <dl>
+              <dt>Role:</dt>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
+            </dl>
+          </td>
           <td>Displays text with an underline.</td>
         </tr>
 
@@ -2962,7 +2973,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
             </dl>
           </td>
           <td>Represents a variable.</td>
@@ -3015,7 +3027,7 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
             </dl>
           </td>
           <td>Represents a line break opportunity.</td>
