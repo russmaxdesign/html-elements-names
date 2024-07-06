@@ -184,3 +184,16 @@ div.example {
   background: red;
   box-shadow: 0 0 0 1px #fff, 0 0 0 3px red;
 }
+
+menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-example {
+  margin: 1em 0 0;
+  padding: 1em;
+  background: #eee;
+  border: 1px dotted #ddd;
+}

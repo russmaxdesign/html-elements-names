@@ -36,7 +36,7 @@
 
 
         <tr>
-          <td class="name"><code>a</code></td>
+          <td class="name"><code>a</code> with <code>href</code></td>
           <td>
 <div class="example">
   <a href="#">Test</a>
@@ -65,6 +65,27 @@
 
 
         <tr>
+          <td class="name"><code>a</code> without <code>href</code></td>
+          <td>
+<div class="example">
+  <a>Test</a>
+</div>
+<pre><code>&lt;a href="#"&gt;Test&lt;a&gt;</code></pre>
+          </td>
+          <td>
+            <dl>
+              <dt>Role:</dt>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>generic</code></dd>
+            </dl>
+          </td>
+          <td>N/A</td>
+        </tr>
+<!-- NEW ROW -->
+
+
+
+        <tr>
           <td class="name"><code>abbr</code></td>
           <td>
 <div class="example">
@@ -75,7 +96,8 @@
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>abbr</code></dd>
+              <dd>Chrome: <code>abbr</code></dd>
+              <dd>Firefox: <code>generic</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -121,19 +143,77 @@
 
 
         <tr>
-          <td class="name"><code>area</code></td>
+          <td class="name"><code>area</code> with <code>href</code></td>
           <td>
 <div class="example">
-  N/A
+  <img style="width: 60px; height: 60px;" usemap="#image-map" src="assets/android.svg" alt="Android logo">
+  <map name="image-map">
+    <area shape="rect" coords="0,0,60,60" alt="Go to Max Design site" href="https://www.maxdesign.com.au/" target="_blank">
+  </map>
 </div>
-<pre><code>&lt;area
-  shape=""
-  coords=""
-  href=""
-  alt=""
-&gt;</code></pre>
+<pre><code>&lt;img
+  usemap="#image-map"
+  src="#"
+  alt="Android"
+&gt;
+&lt;map name="image-map"&gt;
+  &lt;area
+    shape="rect"
+    coords="0,0,60,60"
+    alt="Go to site"
+    href="#"
+    target="_blank"
+  &gt;
+&lt;/map&gt;</code></pre>
           </td>
-          <td>N/A</td>
+          <td>
+            <dl>
+              <dt>Role:</dt>
+              <dd><code>link</code></dd>
+              <dt>Possible accessible names:</dt>
+              <dd><code>aria-labelledby</code></dd>
+              <dd><code>aria-label</code></dd>
+              <dd><code>alt</code></dd>
+              <dd><code>title</code></dd>
+            </dl>
+          </td>
+          <td>Represents a specific area within an image map.</td>
+        </tr>
+
+
+
+<!-- NEW ROW -->
+
+
+
+        <tr>
+          <td class="name"><code>area</code> without <code>href</code></td>
+          <td>
+<div class="example">
+  <img style="width: 60px; height: 60px;" usemap="#image-map2" src="assets/android.svg" alt="MDN infographic" />
+  <map name="image-map2">
+    <area shape="rect" coords="0,0,60,60" alt="Android logo">
+  </map>
+</div>
+<pre><code>&lt;img
+  usemap="#image-map"
+  src="#"
+  alt="Android"
+&gt;
+&lt;map name="image-map"&gt;
+  &lt;area
+    shape="rect"
+    coords="0,0,60,60"
+  &gt;
+&lt;/map&gt;</code></pre>
+          </td>
+          <td>
+            <dl>
+              <dt>Role:</dt>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>generic</code></dd>
+            </dl>
+          </td>
           <td>Represents a specific area within an image map.</td>
         </tr>
 
@@ -219,7 +299,8 @@
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>audio</code></dd>
+              <dd>Chrome <code>audio</code></dd>
+              <dd>Firefox: <code>group</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -246,7 +327,8 @@
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
             </dl>
           </td>
           <td>Displays text in a bold style.</td>
@@ -287,7 +369,8 @@
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
             </dl>
           </td>
           <td>Represents text that is isolated from its surrounding for the purposes of bidirectional text formatting.</td>
@@ -310,7 +393,8 @@
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
             </dl>
           </td>
           <td>Overrides the current text direction.</td>
@@ -383,7 +467,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>linebreak</code></dd>
+              <dd>Chrome: <code>linebreak</code></dd>
+              <dd>Firefox: <code>linebreak</code></dd>
             </dl>
           </td>
           <td>Produces a single line break.</td>
@@ -497,7 +582,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
             </dl>
           </td>
           <td>Represents a citation or reference to another source.</td>
@@ -580,7 +666,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
             </dl>
           </td>
           <td>Links a piece of content with a machine-readable translation.</td>
@@ -1017,7 +1104,6 @@ Test</code></pre>
             <dl>
               <dt>Role:</dt>
               <dd>Primary: <code>contentinfo</code></dd>
-              <dd>Non-primary: <code>FooterAsNonLandmark</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1025,6 +1111,31 @@ Test</code></pre>
             </dl>
           </td>
           <td>Represents the footer of a document or a section.</td>
+        </tr>
+
+
+
+<!-- NEW ROW -->
+
+
+
+        <tr>
+          <td class="name"><code>footer</code> inside other landmark</td>
+          <td>
+<div class="example">
+  N/A
+</div>
+<pre><code>&lt;footer&gt;
+  Test
+&lt;/footer&gt;</code></pre>
+          </td>
+          <td>
+            <dl>
+              <dt>Role:</dt>
+              <dd>Non-primary: <code>generic</code></dd>
+            </dl>
+          </td>
+          <td>N/A</td>
         </tr>
 
 
@@ -1048,7 +1159,7 @@ Test</code></pre>
             <dl>
               <dt>Role:</dt>
               <dd>Chrome: <code>generic</code></dd>
-              <dd>FireFox: <code>form</code></dd>
+              <dd>Firefox: <code>form</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1124,7 +1235,6 @@ Test</code></pre>
             <dl>
               <dt>Role:</dt>
               <dd>Primary: <code>banner</code></dd>
-              <dd>Non-primary: <code>generic</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1132,6 +1242,31 @@ Test</code></pre>
             </dl>
           </td>
           <td>Represents the header of a document or a section.</td>
+        </tr>
+
+
+
+<!-- NEW ROW -->
+
+
+
+        <tr>
+          <td class="name"><code>header</code> inside other landmark</td>
+          <td>
+<div class="example">
+  N/A
+</div>
+<pre><code>&lt;header&gt;
+  &lt;h3&gt;Test&lt;/h3&gt;
+&lt;/header&gt;</code></pre>
+          </td>
+          <td>
+            <dl>
+              <dt>Role:</dt>
+              <dd>Non-primary: <code>generic</code></dd>
+            </dl>
+          </td>
+          <td>N/A</td>
         </tr>
 
 
@@ -1227,7 +1362,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
             </dl>
           </td>
           <td>Displays text in an italic style.</td>
@@ -1255,7 +1391,7 @@ Test</code></pre>
             <dl>
               <dt>Role:</dt>
               <dd>Chrome: <code>iframe</code></dd>
-              <dd>FireFox: <code>internal frame</code></dd>
+              <dd>Firefox: <code>internal frame</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1370,7 +1506,8 @@ Test</code></pre>
           <td>
             <dl>
               <dt>Role:</dt>
-              <dd><code>Accessibility node not exposed</code></dd>
+              <dd>Chrome: <code>Accessibility node not exposed</code></dd>
+              <dd>Firefox: <code>text leaf</code></dd>
             </dl>
           </td>
           <td>Specifies text as keyboard input.</td>
@@ -1394,7 +1531,7 @@ Test</code></pre>
             <dl>
               <dt>Role:</dt>
               <dd>Chrome: <code>LabelText</code></dd>
-              <dd>FireFox: <code>label</code></dd>
+              <dd>Firefox: <code>label</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1424,7 +1561,7 @@ Test</code></pre>
             <dl>
               <dt>Role:</dt>
               <dd>Chrome: <code>legend</code></dd>
-              <dd>FireFox: <code>label</code></dd>
+              <dd>Firefox: <code>label</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -1565,30 +1702,47 @@ Test</code></pre>
           <td class="name"><code>menu</code></td>
           <td>
 <div class="example">
-  N/A
+<menu>
+  <li><button onclick="injectHelloText()">Inject Hello</button></li>
+  <li><button onclick="injectGoodbyeText()">Inject Goodbye</button></li>
+  <li><button onclick="clearText()">Clear</button></li>
+</menu>
+<div class="menu-example"></div>
+
+ <script>
+      function injectHelloText() {
+          const container = document.querySelector('.menu-example');
+          container.textContent = "Hello world";
+      }
+
+      function injectGoodbyeText() {
+          const container = document.querySelector('.menu-example');
+          container.textContent = "Goodbye world";
+      }
+
+      function clearText() {
+          const container = document.querySelector('.menu-example');
+          container.textContent = "";
+      }
+  </script>
 </div>
-<pre><code>&lt;menu&gt;&lt;/menu&gt;</code></pre>
+<pre><code>&lt;menu&gt;
+  &lt;li&gt;&lt;button&gt;Inject Hello&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button&gt;Inject Goodbye&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button&gt;Clear&lt;/button&gt;&lt;/li&gt;
+&lt;/menu&gt;</code></pre>
           </td>
-          <td>N/A</td>
-          <td>Represents a list of commands.</td>
-        </tr>
-
-
-
-<!-- NEW ROW -->
-
-
-
-        <tr>
-          <td class="name"><code>menuitem</code></td>
           <td>
-<div class="example">
-  N/A
-</div>
-<pre><code>&lt;menuitem&gt;&lt;/menuitem&gt;</code></pre>
+            <dl>
+              <dt>Role:</dt>
+              <dd><code>list</code></dd>
+              <dt>Possible accessible names:</dt>
+              <dd><code>aria-labelledby</code></dd>
+              <dd><code>aria-label</code></dd>
+              <dd><code>title</code></dd>
+            </dl>
           </td>
-          <td>N/A</td>
-          <td>Represents a list (or menuitem) of commands that a user can perform.</td>
+          <td>An alternative to the UL, intended for interactive items.</td>
         </tr>
 
 
@@ -1720,7 +1874,7 @@ Test</code></pre>
             <dl>
               <dt>Role:</dt>
               <dd>Chrome: <code>PluginObject</code></dd>
-              <dd>FireFox: <code>Document</code></dd>
+              <dd>Firefox: <code>Document</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
@@ -2273,7 +2427,7 @@ Test</code></pre>
             <dl>
               <dt>Role:</dt>
               <dd>Chrome: <code>Accessibility node not exposed</code></dd>
-              <dd>FireFox: <code>generic</code></dd>
+              <dd>Firefox: <code>generic</code></dd>
             </dl>
           </td>
           <td>Represents an inline styleless section in a document.</td>
@@ -2852,7 +3006,7 @@ Test</code></pre>
             <dl>
               <dt>Role:</dt>
               <dd>Chrome: <code>video</code></dd>
-              <dd>FireFox: <code>group</code></dd>
+              <dd>Firefox: <code>group</code></dd>
               <dt>Possible accessible names:</dt>
               <dd><code>aria-labelledby</code></dd>
               <dd><code>aria-label</code></dd>
