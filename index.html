@@ -190,7 +190,7 @@
           <td class="name"><code>area</code> without <code>href</code></td>
           <td>
 <div class="example">
-  <img style="width: 60px; height: 60px;" usemap="#image-map2" src="assets/android.svg" alt="MDN infographic" />
+  <img style="width: 60px; height: 60px;" usemap="#image-map2" src="assets/android.svg" alt="MDN infographic">
   <map name="image-map2">
     <area shape="rect" coords="0,0,60,60" alt="Android logo">
   </map>
@@ -513,13 +513,31 @@ Test</code></pre>
           <td class="name"><code>canvas</code></td>
           <td>
 <div class="example">
-  <canvas width="100" height="50">Test</canvas>
+  <canvas id="myCanvas" width="100" height="100">
+    This is some fallback text.
+  </canvas>
+
+  <script>
+    // Get the canvas element
+    var canvas = document.getElementById('myCanvas');
+    // Get the 2D rendering context
+    var ctx = canvas.getContext('2d');
+
+    // Render rectangle 1
+    ctx.fillStyle = '#00FF00';
+    ctx.fillRect(20, 20, 30, 40);
+
+    // Render rectangle 2
+    ctx.fillStyle = '#FF0000';
+    ctx.fillRect(40, 50, 50, 20);
+  </script>
 </div>
 <pre><code>&lt;canvas
+  id=""
   width=""
   height=""
 &gt;
-  Test
+  This is some fallback text.
 &lt;/canvas&gt;</code></pre>
           </td>
           <td>
@@ -1972,7 +1990,36 @@ Test</code></pre>
           <td class="name"><code>output</code></td>
           <td>
 <div class="example">
-  <output name="result" for="a b">60</output>
+
+    <form>
+        <input class="output1" type="number" id="a" aria-label="Value 1" oninput="calculateSum()"> + 
+        <input class="output1" type="number" id="b" aria-label="Value 2" oninput="calculateSum()"> = 
+        <output class="output2" name="result" id="result">0</output>
+        <div class="announcement" aria-live="polite">
+            The total value is 0
+        </div>
+    </form>
+
+<script>
+        let timeout = null;
+
+        function calculateSum() {
+            const a = parseFloat(document.getElementById('a').value) || 0;
+            const b = parseFloat(document.getElementById('b').value) || 0;
+            const result = a + b;
+
+            // Update the output element
+            document.getElementById('result').value = result;
+
+            // Clear the previous timeout
+            clearTimeout(timeout);
+
+            // Set a new timeout to update the announcement after 0.5 seconds
+            timeout = setTimeout(() => {
+                document.querySelector('.announcement').textContent = `The total value is ${result}`;
+            }, 500);
+        }
+    </script>
 </div>
 <pre><code>&lt;output
   name=""
@@ -2088,7 +2135,41 @@ Test</code></pre>
           <td class="name"><code>progress</code></td>
           <td>
 <div class="example">
-  <progress id="file" max="100" value="70"> 70% </progress>
+
+  <progress id="file" max="100" value="0">0%</progress>
+  <div aria-live="polite">
+      <div id="canvas">0%</div>
+  </div>
+  <button id="resetBtn">Reset</button>
+
+    <script>
+      let progressElement = document.getElementById('file');
+      let canvasElement = document.getElementById('canvas');
+      let resetBtn = document.getElementById('resetBtn');
+      let value = 0;
+      let interval;
+
+      function updateProgress() {
+          if (value <= 100) {
+              progressElement.value = value;
+              progressElement.innerHTML = value + '%';
+              canvasElement.textContent = value + '%';
+              value += 5;
+          }
+      }
+
+      function startProgress() {
+          value = 0;
+          clearInterval(interval);
+          interval = setInterval(updateProgress, 1000);
+      }
+
+      resetBtn.addEventListener('click', startProgress);
+
+      // Start the progress when the page loads
+      startProgress();
+    </script>
+
 </div>
 <pre><code>&lt;progress
   id=""
